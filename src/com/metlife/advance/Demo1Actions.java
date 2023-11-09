@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
-
+//Mouse actions
 public class Demo1Actions {
     public static void main(String[] args) {
 
