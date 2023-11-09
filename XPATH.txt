@@ -1,0 +1,68 @@
+XPath 
+Absolute xpath - /html/body/div[3]/div[2]/div/div/div[2]/div/div/div[1]/form/div[1]/div[7]/span/span[3]/input
+
+Relative xpath - 
+//tagname[@attribute='']
+//tagname[text()='']
+
+Contains
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+Grouping of xpath - starts at 1
+(//div[@class='checkbox-ui'])[2]
+
+Exclude white space
+//tagname[normalize-space()='']
+
+
+Example: Validate in chrome --> ctrl+f
+//input[@value='-1']
+//label[text()='Custom']
+//b[contains(text(),'phpMyAdm')]
+
+//img[@alt='Go']
+//img[contains(@src,'go.gif')]
+
+
+//span[contains(text(),'free tr')]
+//span[contains(@class,'header-text')]
+
+//span[normalize-space()='Start your free trial.']
+
+------------------------------
+CSS Selector - https://www.w3schools.com/cssref/css_selectors.php
+
+#id
+.classname
+tagname[attribute='']
+[attribute='']
+
+Example:
+#citiCard2
+input[name='CCVNO']
+
+----
+Exception
+Exception in thread "main" org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+
+
+Exception in thread "main" org.openqa.selenium.NoAlertPresentException: no such alert
+
+
+
+Click on hidden element 
+ElementClickInterceptedException  (some pop up hides the target element)
+ElementNotInteractableException (element is present not visible)
+------
+
+
+HTML 
+	Frame 1
+		Frame 1.1
+			button 1
+	Frame 2
+		button 2
+
+
+
