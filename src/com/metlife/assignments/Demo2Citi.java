@@ -15,7 +15,18 @@ public class Demo2Citi {
 
         driver.get("https://www.online.citibank.co.in/");
 
-        driver.findElement(By.xpath("//a[@class='newclose']")).click();
+        //presence of element
+        if(driver.findElements(By.xpath("//a[@class='newclose']")).size()>0)
+        {
+            //visiblity of element
+            if(driver.findElement(By.xpath("//a[@class='newclose']")).isDisplayed())
+            {
+                driver.findElement(By.xpath("//a[@class='newclose']")).click();
+            }
+
+        }
+
+
         driver.findElement(By.xpath("//a[@class='newclose2']")).click();
 
         driver.findElement(By.xpath("//span[text()='Login']")).click();

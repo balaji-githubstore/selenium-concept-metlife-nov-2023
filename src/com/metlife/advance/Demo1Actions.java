@@ -22,6 +22,8 @@ public class Demo1Actions {
         driver.findElement(By.xpath("//a[text()='Members Listing']")).click();
 
 
-
+driver.navigate().back();
+driver.navigate().forward();
+driver.navigate().refresh();
     }
 }
