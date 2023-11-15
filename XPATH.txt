@@ -15,6 +15,19 @@ Grouping of xpath - starts at 1
 Exclude white space
 //tagname[normalize-space()='']
 
+Upload
+//input[@type='file']
+
+And-OR
+//input[@type='file' and @id='edit-field-audited-balance-sheet-for-0-upload']
+
+
+Parent-Child
+
+child 
+//table[@id='example']/tbody/tr
+Ancestor-descendant
+
 
 Example: Validate in chrome --> ctrl+f
 //input[@value='-1']
@@ -63,6 +76,14 @@ HTML
 			button 1
 	Frame 2
 		button 2
+
+
+-------
+row count 
+//table[@id='example']/tbody/tr
+
+column count 
+//table[@id='example']/tbody/tr[1]/td
 
 
 
