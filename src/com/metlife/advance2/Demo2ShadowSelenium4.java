@@ -37,9 +37,10 @@ public class Demo2ShadowSelenium4 {
 
         SearchContext shadowRoot1= driver.findElement(By.cssSelector("global-login")).getShadowRoot();
         SearchContext shadowRoot2= shadowRoot1.findElement(By.cssSelector("create-account")).getShadowRoot();
-        SearchContext shadowRoot3=shadowRoot2.findElement(By.cssSelector("form > input-text:nth-child(2)")).getShadowRoot();
+
 
         //firstname
+        SearchContext shadowRoot3=shadowRoot2.findElement(By.cssSelector("form > input-text:nth-child(2)")).getShadowRoot();
         shadowRoot3.findElement(By.cssSelector("#input-text-name")).sendKeys("jack");
 
         //lastname
@@ -55,8 +56,13 @@ public class Demo2ShadowSelenium4 {
         Select selectDay=new Select(shadowRoot3.findElement(By.cssSelector("#input-select-day")));
         selectDay.selectByVisibleText("20");
 
-        //year
         shadowRoot3.findElement(By.cssSelector("#input-text-year")).sendKeys("2000");
+
+
+        //country
+        shadowRoot3=shadowRoot2.findElement(By.cssSelector("form > input-select:nth-child(5)")).getShadowRoot();
+        Select selectCounty=new Select(shadowRoot3.findElement(By.cssSelector("#input-select-country")));
+        selectCounty.selectByVisibleText("United States of America");
 
 
     }

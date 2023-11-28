@@ -31,5 +31,6 @@ public class Demo1Shadowjs {
         js.executeScript("document.querySelector(\"global-login\").shadowRoot.querySelector(\"create-account\").shadowRoot.querySelector(\"form > input-text:nth-child(2)\").shadowRoot.querySelector(\"#input-text-name\").value='balaji'");
 
         // driver.findElement(By.name("firstname")).sendKeys("jack");
+
     }
 }
